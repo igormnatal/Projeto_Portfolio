@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.intro {
+
+  background-image: url("../assets/images/Background_Intro.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  background-color: lightgray 50%;
+
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 180px 80px 180px;
+    align-items: center;
+
+    .avatar {
+      position: relative;
+    }
+
+    .icone {
+      position: absolute;
+      bottom: 0;
+      right: 1px;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font: var(--subtitle);
+      color: var(--color-gray-500);
+      margin-bottom: 8px;
+      gap: 12px;
+      margin-top: 64px;
+
+      span {
+        color: var(--color-red);
+      }
+    }
+
+    h1 {
+      display: flex;
+      font: var(--title-lg);
+      color: var(--color-gray-600);
+      font-weight: 700;
+      justify-content: center;
+    }
+
+    h3 {
+
+      font: var(--text-sm);
+      color: var(--color-gray-400);
+      text-align: center;
+      margin: 20px 80px;
+    }
+  }
+
+  .linguagens {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    .content-icons {
+      display: flex;
+      background-color: var(--color-gray-300);
+      border-radius: 999px;
+      padding: 8px 16px;
+      align-items: center;
+      gap: 8px;
+
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      span {
+        font: var(--text-md);
+        color: var(--color-gray-500);
+      }
+
+      img span {
+        align-self: center;
+      }
+    }
+  }
+
+  .next {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 94px 0px 129px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-image {
+  cursor: pointer;
+  transition: transform 0.8s ease;
+}
+
+.scroll-image:hover {
+  transform: scale(1.1);
+
+  #nextSession {
+    padding: 100px;
+    background-color: #f0f0f0;
+  }
+}
+
+.intro {
+  max-width: 1366;
+  min-height: auto;
+
+  .perfil {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .next {
+    padding: 50px 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin-top: 40px 0px 10px 0px;
+      font-size: 20px;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+    
+
+    span {
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 20px;
+      font-size: 18px;
+    }
+  }
+
+  .linguagens {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .content-icons {
+      padding: 8px;
+      display: flex;
+    }
+  }
+}
